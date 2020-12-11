@@ -1,0 +1,73 @@
+.colectiva {
+  text-align: center;
+  color: white;
+  padding: 3px 10px;
+  border: paleturquoise 5px solid;
+  border-radius: 20px;
+  font-size: xx-large
+}
+
+.fondoaside {
+  width: 21vw;
+  background-image: url(../imagenes/fondojauria.jpg);
+  height: 100vh;
+  display: inline-block;
+  float: none
+}
+
+.bienvenida {
+  text-align: left;
+  color: white;
+  padding: 3px 10px;
+  font-size: large
+}
+
+.lista {
+  color: white;
+  font-size: large
+}
+
+
+.fondo {
+  background-image: url(../imagenes/fondo.jpg);
+  width: 100vw;
+  height: 100vh
+}
+
+.avatares {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  overflow: hidden;
+  float: right
+}
+
+.avatar {
+  cursor: pointer;
+  height: 200px;
+  width: 200px;
+  background-image: url(../imagenes/fondojauria.jpg);
+  padding: 60px;
+  margin: 5px;
+  justify-content: flex-end
+}
+
+.nombres {
+  text-align: center;
+  color: white
+}
+
+.main {
+  display: inline-block;
+}
+
+.botoncodificar {
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #1883ba;
+  border-radius: 6px;
+  border: 2px solid #0016b0;
+}

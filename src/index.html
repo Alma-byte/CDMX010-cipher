@@ -1,16 +1,85 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>MENSAJERÍA JAURÍA hola microbi </h1>
-    <script type="text/javascript" src="index.js">
-    </script>
+<head>
+  <meta charset="utf-8">
+  <title>JAURÍA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!--fondo de la sección de avatares-->
+    <div class="fondo">
+      <aside>
+        <!--fondo de la sección de instrucciones-->
+        <div class="fondoaside">
+          <!--Título-->
+          <h1 class="colectiva">MENSAJERÍA JAURÍA</h1>
+          <br>
+          <!--Subtitulo-->
+          <h3 class="bienvenida">Bienvenida a tu mensajería subversiva preferida</h3>
+          <br>
+          <!--lista de instrucciones-->
+          <ul class="lista">
+            <li>Da click al avatar de la compañera a la cual le quieras mandar un mensaje cifrado</li>
+            <li>Escribe el mensaje en la caja de texto</li>
+            <li>Codificalo y oprime el botón de enviar</li>
+          </ul>
+        </div>
+        </aside>
+        <!--sección de botones -->
+        <section>
+          <!--botón de avatar -->
+          <div class="avatares">
+            <div class="avatar" id="avatarlisa" onclick="lisaboton">
+              <img src="../imagenes/lisa.png" alt="avatarlisa">
+              <!--salto de linea-->
+              <br>
+              <!--nombre de avatar -->
+              <h2 class="nombres">LISA</h2>
+            </div>
+            <div class="avatar1" id="avatardaria" onclick="dariaboton">
+              <img src="../imagenes/daria.jpg" alt="avatardaria">
+              <br>
+              <h2 class="nombres">DARIA</h2>
+            </div>
+            <div class="avatar2" id="avatarspinelli" onclick="spinelliboton">
+              <img src="../imagenes/spinelli.jpg" alt="avatarspinelli">
+              <br>
+              <h2 class="nombres">SPINELLI</h2>
+            </div>
+          </div>
+        </section>
     </div>
-    <script src="index.js" type="module"></script>
-  </body>
+
+    <!--Segunda ventana-->
+    <div>
+
+      <!--fondo de la sección de avatares-->
+      <div class="fondo">
+        <br>
+        <br>
+        <br>
+        <!--Avatar que recibira mensaje-->
+        <div class="avatar" id="avatarlisa">
+          <img src="../imagenes/lisa.png" alt="avatarlisa">
+          <!--salto de linea-->
+          <br>
+          <!--nombre de avatar -->
+          <h2 class="nombres">LISA</h2>
+        </div>
+        <section>
+          <!--Caja de texto-->
+          <textarea name="mensaje" rows="20" cols="50">Escribe aquí el mensaje</textarea>
+          <!--Caja de desplazamientos-->
+          <input type="number" name="numerodedesplazamientos">
+          <!--Botón codificar-->
+          <a class="botoncodificar" href="https:...">CODIFICAR</a>
+          <!--Botón descodificar-->
+          <a class="botoncodificar" href="https:...">DESCODIFICAR</a>
+          <!--Botón enviar-->
+          <a class="botoncodificar" href="index.html">ENVIAR</a>
+        </section>
+      </div>
+    </div>
+</body>
 </html>
+
+
