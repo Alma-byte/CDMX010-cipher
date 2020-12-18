@@ -90,7 +90,7 @@
 }
 
 
-.botondesodificar {
+.botondescodificar {
   text-decoration: none;
   padding: 10px;
   font-weight: 600;
@@ -135,9 +135,18 @@ pantalla {
 .escrib {
  position: absolute;
  left: 40%;
- top: 130%
+ top: 110%
 } 
 
 .lista {
  line-height: 30px
 } 
+
+.tex {
+  color: white
+}
+
+.tex1 {
+  color: white
+}
+
