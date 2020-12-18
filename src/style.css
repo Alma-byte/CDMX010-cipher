@@ -31,34 +31,50 @@
 .fondo {
   background-image: url(../imagenes/fondo.jpg);
   width: 100vw;
-  height: 100vh
+  height: 100vh;
+  display: flex
 }
 
 .avatares {
   display: flex;
-  justify-content: flex-start;
   padding: 10px;
-  overflow: hidden;
-  float: right
-}
+  justify-content: space-between
+
+} 
 
 .avatar {
   cursor: pointer;
   height: 200px;
   width: 200px;
   background-image: url(../imagenes/fondojauria.jpg);
-  padding: 60px;
-  margin: 5px;
-  justify-content: flex-end
+  padding: 70px;
+  margin: 20px
+
+}
+
+.avatar1 {
+  cursor: pointer;
+  height: 200px;
+  width: 200px;
+  background-image: url(../imagenes/fondojauria.jpg);
+  padding: 70px;
+  margin: 20px
+}
+
+.avatar2 {
+  cursor: pointer;
+  height: 200px;
+  width: 200px;
+  justify-content: center;
+  background-image: url(../imagenes/fondojauria.jpg);
+  padding: 70px;
+  margin: 20px
+
 }
 
 .nombres {
   text-align: center;
   color: white
-}
-
-.main {
-  display: inline-block;
 }
 
 .botoncodificar {
@@ -70,4 +86,58 @@
   background-color: #1883ba;
   border-radius: 6px;
   border: 2px solid #0016b0;
+
 }
+
+
+.botondesodificar {
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #1883ba;
+  border-radius: 6px;
+  border: 2px solid #0016b0;
+
+}
+
+.botonenviar {
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #1883ba;
+  border-radius: 6px;
+  border: 2px solid #0016b0;
+
+}
+
+.avatar3 {
+  cursor: pointer;
+  height: 200px;
+  width: 200px;
+  background-image: url(../imagenes/fondojauria.jpg);
+  padding: 70px;
+  position: absolute;
+  left: 8%;
+  top: 120%
+}
+
+ventana {
+  display: none
+}
+
+pantalla {
+  display: block
+}
+.escrib {
+ position: absolute;
+ left: 40%;
+ top: 130%
+} 
+
+.lista {
+ line-height: 30px
+} 

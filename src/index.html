@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div id="pantalla">
     <!--fondo de la sección de avatares-->
     <div class="fondo">
       <aside>
@@ -26,9 +27,18 @@
         </aside>
         <!--sección de botones -->
         <section>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
           <!--botón de avatar -->
           <div class="avatares">
-            <div class="avatar" id="avatarlisa" onclick="lisaboton">
+            <div class="avatar" id="avatarlisa" onclick="mostrarventana()">
               <img src="../imagenes/lisa.png" alt="avatarlisa">
               <!--salto de linea-->
               <br>
@@ -48,37 +58,53 @@
           </div>
         </section>
     </div>
+    </div>
+
+
 
     <!--Segunda ventana-->
-    <div>
+    <div id="ventana">
 
       <!--fondo de la sección de avatares-->
       <div class="fondo">
-        <br>
-        <br>
-        <br>
         <!--Avatar que recibira mensaje-->
-        <div class="avatar" id="avatarlisa">
-          <img src="../imagenes/lisa.png" alt="avatarlisa">
+        <div class="avatar3" id="avatarlisa3">
+          <img src="../imagenes/lisa.png" alt="avatarlisa3">
           <!--salto de linea-->
           <br>
           <!--nombre de avatar -->
           <h2 class="nombres">LISA</h2>
         </div>
         <section>
+          <div class="escrib">
+          <div class="texto">
+          <h3 class="tex" >ESCRIBE AQUÍ EL MENSAJE</h3>
           <!--Caja de texto-->
-          <textarea name="mensaje" rows="20" cols="50">Escribe aquí el mensaje</textarea>
+          <textarea id="mensaje" name="mensaje" rows="10" cols="60"></textarea>
+          </div>
+          <br>
+          <br>
           <!--Caja de desplazamientos-->
-          <input type="number" name="numerodedesplazamientos">
+          <input id="desplazamiento" type="number" name="numerodedesplazamientos">
+          <br>
+          <br>
+          <br>
           <!--Botón codificar-->
           <a class="botoncodificar" href="https:...">CODIFICAR</a>
           <!--Botón descodificar-->
-          <a class="botoncodificar" href="https:...">DESCODIFICAR</a>
+          <a class="botondescodificar" href="https:...">DESCODIFICAR</a>
           <!--Botón enviar-->
-          <a class="botoncodificar" href="index.html">ENVIAR</a>
+          <a class="botonenviar" href="index.html">ENVIAR</a>
+          <br>
+          <br>
+          <br>
+           <!--Caja de texto-->
+          <textarea name="mensaje2" rows="10" cols="60"></textarea>
+          </div>
         </section>
       </div>
     </div>
+    <script type="module" src="index.js"></script>
 </body>
 </html>
 

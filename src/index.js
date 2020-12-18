@@ -2,9 +2,15 @@ import cipher from './cipher.js';
 
 console.log(cipher);
 
-alert("Todos tus mensajes serán cifrados")
+//Funcion para mostrar segunda ventana
+  function mostrarventana() {
+    document.getElementById("ventana").style.display = "block";
+  }
 
-function showavatar(index){
-  localStorage.setItem("avatares", index);
-  window.location.href= "avatar" + index + ".html";
-}
+//Funcion para que aparezca el texto codificado
+  document.getElementById("botoncodificar").addEventListener("click",function(){
+    let texto = document.getElementById("mensaje").nodeValue;
+    let desplazamiento = document.getElementById("desplazamiento").nodeValue;
+    document.getElementById("mensaje2").value = cifrar(texto,desplazamiento);
+  }. true);
+  
