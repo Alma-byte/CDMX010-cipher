@@ -3,35 +3,43 @@ import cipher from './cipher.js';
 console.log(cipher.encode( 10 ,"adios"))
 console.log(cipher.decode( 10 ,"knsy}"))
 
-//Funcion para mostrar segunda ventana
-  function mostrarventana() {
-  document.getElementById("ventana").style.display = "block";
+   //Funcion para mostrar segunda ventana con evento del DOM addEventListener
+  const avatarlisa = document.getElementById ("avatarlisa")
+  avatarlisa.addEventListener("click",mostrarventana, true);
+
+ function mostrarventana() {
+  //console.log("mostrarventana")
+  let ventana = document.getElementById("ventana");
+  ventana.style.display = "block";
   }
 
-  //Constantes
-  const encriptar = document.getElementById('botoncodificar')
-  const desencriptar = document.getElementById('botondescodificar')
+   //Constantes y llamados
   const desplazamiento = document.getElementById('desplazamiento')
-  const textoEntrada =  document.getElementById('mensaje')
-  const textosalida = document.getElementById('mensaje2')
+  const botoncodificar = document.getElementById("botoncodificar").addEventListener("click",encriptar, true);
+  const botondescodificar = document.getElementById("botondescodificar").addEventListener("click",decencriptar, true);
 
-
-
-//Funcion para que aparezca el texto codificado
-  encriptar.addEventListener("click", function() {
-    const textoEntrada= document.getElementById("mensaje").value.toUpperCase();
-    desplazamiento = Number.parseInt(document.getElementById("desplazamiento").value);
-    document.getElementById("mensaje2").value = cifrar(texto,desplazamiento);
-  }. true);
-
+   //Funcion para que aparezca el texto codificado
+   function encriptar(){
+    let textoEntrada= document.getElementById("mensaje").value.toUpperCase();
+   // console.log('textoEntrada', textoEntrada)
+    const desplazamientoParseado = Number.parseInt(desplazamiento.value);
+    const resultado = cipher.encode(desplazamientoParseado, textoEntrada);
+    document.getElementById("mensaje2").textContent = resultado;
+  }
 
   //Funcion para que aparezca el texto decodificado
-  encriptar.addEventListener("click",function(){
-    const textoSalida= document.getElementById("mensaje2").value.toUpperCase();
-    desplazamiento = Number.parseInt(document.getElementById("desplazamiento").value);
-    document.getElementById("mensaje").value = descifrar(texto,desplazamiento);
-  }. true);
+  function decencriptar(){
+    let textoSalida= document.getElementById("mensaje").value.toUpperCase();
+   // console.log('hola', textoSalida)
+    const desplazamientoParseado = Number.parseInt(desplazamiento.value);
+    const resultado = cipher.decode(desplazamientoParseado, textoSalida);
+    document.getElementById("mensaje2").textContent = resultado;
+  }
+
+  //toUpperCase() método devuelve el valor convertido en mayúsculas de la cadena que realiza la llamada.
+  //Convierte (parseInt) un argumento de tipo cadena y devuelve un entero de la base especificada.
 
   
 
   
+ 
