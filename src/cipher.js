@@ -9,7 +9,7 @@ const cipher = {
       output [i]= String.fromCharCode(formula);
     }
 
-    return output;
+    return output.join("")
   },
 
 
@@ -22,7 +22,7 @@ const cipher = {
       output [i]= String.fromCharCode(stringResult);
     }
 
-    return output;
+    return output.join("")
   }
    
 };
